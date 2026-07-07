@@ -12,3 +12,20 @@ CREATE TABLE users (
   role user_role NOT NULL,
   phone_number varchar(20)
 );
+
+
+-- 2. CREATE MATCHES TABLE
+CREATE TYPE match_status AS enum(
+  'Available',
+  'Selling Fast',
+  'Sold Out',
+  'Postponed'
+)
+--
+CREATE TABLE matches (
+  match_id serial PRIMARY KEY,
+  fixture varchar(100) NOT NULL,
+  tournament_category varchar(100) NOT NULL,
+  base_ticket_price decimal(8, 2) NOT NULL CHECK (base_ticket_price > 0),
+  match_status match_status NOT NULL
+);
