@@ -66,3 +66,27 @@ INSERT INTO users (full_name, email, role, phone_number) VALUES
 ('Fahim Ahmed', 'fahim@mail.com', 'Football Fan', '+8801877777777'),
 ('Sharmin Sultana', 'sharmin@mail.com', 'Ticket Manager', '+8801888888888'),
 ('Mehedi Hasan', 'mehedi@mail.com', 'Football Fan', NULL);
+
+
+-- DATA SEEDING: INSERT SAMPLE DATA INTO MATCHES
+INSERT INTO matches (match_id, fixture, tournament_category, base_ticket_price, match_status) VALUES
+(101, 'Real Madrid vs Barcelona', 'Champions League', 150.00, 'Available'),
+(102, 'Man City vs Liverpool', 'Premier League', 120.00, 'Selling Fast'),
+(103, 'Bayern Munich vs PSG', 'Champions League', 130.00, 'Available'),
+(104, 'AC Milan vs Inter Milan', 'Serie A', 90.00, 'Sold Out'),
+(105, 'Juventus vs Roma', 'Serie A', 80.00, 'Available'),
+(106, 'Arsenal vs Chelsea', 'Premier League', 110.00, 'Selling Fast'),
+(107, 'Manchester United vs Tottenham', 'Premier League', 115.00, 'Available'),
+(108, 'Borussia Dortmund vs RB Leipzig', 'Bundesliga', 95.00, 'Available'),
+(109, 'Ajax vs PSV Eindhoven', 'Eredivisie', 75.00, 'Selling Fast'),
+(110, 'Benfica vs Porto', 'Primeira Liga', 85.00, 'Available'),
+(111, 'Atletico Madrid vs Sevilla', 'La Liga', 100.00, 'Sold Out'),
+(112, 'Napoli vs Lazio', 'Serie A', 88.00, 'Available'),
+(113, 'Celtic vs Rangers', 'Scottish Premiership', 70.00, 'Selling Fast'),
+(114, 'Flamengo vs Palmeiras', 'Copa Libertadores', 125.00, 'Available'),
+(115, 'Boca Juniors vs River Plate', 'Copa Libertadores', 140.00, 'Sold Out'),
+(116, 'Al Nassr vs Al Hilal', 'Saudi Pro League', 105.00, 'Available'),
+(117, 'Inter Miami vs LA Galaxy', 'MLS', 95.00, 'Selling Fast'),
+(118, 'Galatasaray vs Fenerbahce', 'Turkish Super Lig', 85.00, 'Postponed'),
+(119, 'Club Brugge vs Anderlecht', 'Belgian Pro League', 65.00, 'Available'),
+(120, 'Sporting CP vs Braga', 'Primeira Liga', 78.00, 'Available');
