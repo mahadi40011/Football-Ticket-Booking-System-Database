@@ -29,3 +29,16 @@ CREATE TABLE matches (
   base_ticket_price decimal(8, 2) NOT NULL CHECK (base_ticket_price > 0),
   match_status match_status NOT NULL
 );
+
+
+-- 3. CREATE BOOKINGS TABLE
+CREATE TYPE payment_status AS enum('Pending', 'Confirmed', 'Cancelled', 'Refunded')
+--
+CREATE TABLE bookings (
+  booking_id SERIAL PRIMARY KEY,
+  user_id int REFERENCES users (user_id),
+  match_id int REFERENCES matches (match_id),
+  seat_number varchar(10) NOT NULL,
+  payment_status payment_status NOT NULL,
+  total_cost decimal(8, 2) NOT NULL CHECK (total_cost > 0)
+);
