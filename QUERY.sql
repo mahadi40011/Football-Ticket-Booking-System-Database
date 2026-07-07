@@ -90,3 +90,39 @@ INSERT INTO matches (match_id, fixture, tournament_category, base_ticket_price, 
 (118, 'Galatasaray vs Fenerbahce', 'Turkish Super Lig', 85.00, 'Postponed'),
 (119, 'Club Brugge vs Anderlecht', 'Belgian Pro League', 65.00, 'Available'),
 (120, 'Sporting CP vs Braga', 'Primeira Liga', 78.00, 'Available');
+
+
+-- DATA SEEDING: INSERT SAMPLE DATA INTO BOOKINGS
+INSERT INTO bookings
+(booking_id, user_id, match_id, seat_number, payment_status, total_cost)
+VALUES
+(501, 1, 101, 'A-12', 'Confirmed', 150.00),
+(502, 2, 102, 'B-04', 'Confirmed', 120.00),
+(503, 3, 103, 'C-15', 'Pending', 130.00),
+(504, 4, 104, 'D-08', 'Refunded', 90.00),
+(505, 5, 105, 'A-21', 'Confirmed', 80.00),
+(506, 6, 106, 'E-11', 'Cancelled', 110.00),
+(507, 7, 107, 'F-05', 'Confirmed', 115.00),
+(508, 8, 108, 'B-19', 'Pending', 95.00),
+(509, 9, 109, 'C-07', 'Confirmed', 75.00),
+(510,10,110, 'A-18', 'Refunded', 85.00),
+(511,11,111, 'D-14', 'Confirmed', 100.00),
+(512,12,112, 'E-03', 'Confirmed', 88.00),
+(513,13,113, 'F-09', 'Cancelled', 70.00),
+(514,14,114, 'A-06', 'Pending', 125.00),
+(515,15,115, 'B-12', 'Confirmed', 140.00),
+(516,16,116, 'C-22', 'Refunded', 105.00),
+(517,17,117, 'D-17', 'Confirmed', 95.00),
+(518,18,118, 'E-20', 'Pending', 85.00),
+(519,19,119, 'F-01', 'Confirmed', 65.00),
+(520,20,120, 'A-15', 'Cancelled', 78.00),
+(521, 1,103, 'B-09', 'Confirmed', 130.00),
+(522, 4,106, 'C-10', 'Refunded', 110.00),
+(523, 6,109, 'D-02', 'Confirmed', 75.00),
+(524, 8,112, 'E-16', 'Pending', 88.00),
+(525,10,115, 'F-13', 'Confirmed', 140.00),
+(526,12,118, 'A-24', 'Cancelled', 85.00),
+(527,14,101, 'B-06', 'Confirmed', 150.00),
+(528,16,104, 'C-18', 'Refunded', 90.00),
+(529,18,107, 'D-11', 'Pending', 115.00),
+(530,20,110, 'E-08', 'Confirmed', 85.00);
